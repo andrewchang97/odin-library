@@ -21,12 +21,21 @@
             <p>"The Catcher in the Rye", "J.D. Salinger", 214, true</p>
         </div>
     </div>
-    <div id="bookModal" class="modal">
-        <div class="modalContent">
-          <span class="close">&times;</span>
-          <p>Book Title:</p>
+    <form>
+        <div id="bookModal" class="modal">
+            <div class="modalContent">
+            <span class="close">&times;</span>
+            <label for="book_title">Title:</label>
+            <input type="text" id="book_title" placeholder="The Catcher in the Rye">
+            <label for="author">Author:</label>
+            <input type="text" id="author" placeholder="J.D. Salinger">
+            <label for="page_count">Page count:</label>
+            <input type="number" id="page_count" placeholder="214">
+            <label for="finished">Finished?</label>
+            <input type="checkbox" id="finished" checked>
+            <button class="insideModal" type="submit">Submit</button>
+            </div>
         </div>
-      
-      </div>
+    </form>
 </body>
 </html>
