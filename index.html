@@ -17,23 +17,30 @@
         <button class="createNew">+ New book</button>
     </div>
     <div class="container">
-        <div class="items">
-            <p>"The Catcher in the Rye", "J.D. Salinger", 214, true</p>
+        <div class="library" id="libraryID">
         </div>
     </div>
-    <form>
+    <form action="" method="get" class="libraryForm">
         <div id="bookModal" class="modal">
             <div class="modalContent">
-            <span class="close">&times;</span>
-            <label for="book_title">Title:</label>
-            <input type="text" id="book_title" placeholder="The Catcher in the Rye">
-            <label for="author">Author:</label>
-            <input type="text" id="author" placeholder="J.D. Salinger">
-            <label for="page_count">Page count:</label>
-            <input type="number" id="page_count" placeholder="214">
-            <label for="finished">Finished?</label>
-            <input type="checkbox" id="finished" checked>
-            <button class="insideModal" type="submit">Submit</button>
+                <span class="close">&times;</span>
+                <div class="inputPair">
+                    <label for="book_title">Title:</label>
+                    <input type="text" id="book_title" placeholder="The Catcher in the Rye" required>
+                </div>
+                <div class="inputPair">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" placeholder="J.D. Salinger" required>
+                </div>
+                <div class="inputPair">
+                    <label for="page_count">Page count:</label>
+                    <input type="number" id="page_count" placeholder="214">
+                </div>
+                <div class="inputPair">
+                    <label for="finished">Finished?</label>
+                    <input type="checkbox" id="finished" checked>
+                </div>
+                <button id="insideModal" type="submit">Submit</button>
             </div>
         </div>
     </form>
